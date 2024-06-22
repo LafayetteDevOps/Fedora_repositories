@@ -1,0 +1,19 @@
+---
+# site.yml
+
+- name: Fedora laptop setup
+  hosts: localhost
+  gather_facts: true
+
+
+  tasks:
+
+  - name: Install and/or update repositories
+    ansible.builtin.yum:
+      name: "{{ item.name }}"
+      baseurl: "{{ item.baseurl }}"
+      enabled: "{{ item.enabled }}"
+      gpgcheck: no
+      ip_resolve: 4
+      state: "{{ item.state }}"
+    loop: "{{ repositories }}"
