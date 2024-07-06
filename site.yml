@@ -3,6 +3,7 @@
 
 - name: Fedora laptop setup
   hosts: localhost
+  connection: local
   gather_facts: true
 
 
