@@ -3,9 +3,11 @@
 
 - name: Fedora laptop setup
   hosts: localhost
-  connection: local
+  # connection: local
   gather_facts: true
 
+  vars_files:
+  - vars/main.yml
 
   tasks:
 
