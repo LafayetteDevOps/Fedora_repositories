@@ -15,7 +15,7 @@
     ansible.builtin.yum_repository:
       name: "{{ item.name }}"
       baseurl: "{{ item.baseurl }}"
-      description: new_repo
+      description: "{{ item.description }}"
       enabled: "{{ item.enabled }}"
       gpgcheck: no
       ip_resolve: 4
