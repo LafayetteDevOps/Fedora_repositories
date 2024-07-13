@@ -3,22 +3,25 @@
 repositories:
   - name: packages-microsoft-com-prod
     baseurl: 'https://packages.microsoft.com/rhel/7/prod/'
-    description: 'packages-microsoft'
+    description: 'packages-microsoft-repo'
     enabled: true
     state: present
   - name: google-chrome
     baseurl: 'https://dl.google.com/linux/chrome/rpm/stable/x86_64'
+    description: google-chrome-repo
     enabled: true
     gpgcheck: false
     state: present
   - name: 'Visual Studio Code'
     baseurl: https://packages.microsoft.com/yumrepos/vscode
+    description: 'Visual Studio Code repo'
     enabled: true
     gpgcheck: true
     gpgkey: https://packages.microsoft.com/keys/microsoft.asc
     state: present
   - name: brave-browser-release
     baseurl: https://brave-browser-rpm-release.s3.brave.com/x86_64/
+    description: 'brave-browser-repo'
     enabled: true
     state: present
 
