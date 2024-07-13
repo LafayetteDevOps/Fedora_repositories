@@ -6,6 +6,10 @@ repositories:
     description: 'packages-microsoft'
     enabled: true
     state: present
-
+  - name: google-chrome
+    baseurl: 'https://dl.google.com/linux/chrome/rpm/stable/x86_64'
+    enabled: true
+    gpgcheck: false
+    state: present
 
 ...
