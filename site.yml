@@ -12,9 +12,10 @@
   tasks:
 
   - name: Install and/or update repositories
-    ansible.builtin.yum:
+    ansible.builtin.yum_repository:
       name: "{{ item.name }}"
       baseurl: "{{ item.baseurl }}"
+      description: new_repo
       enabled: "{{ item.enabled }}"
       gpgcheck: no
       ip_resolve: 4
