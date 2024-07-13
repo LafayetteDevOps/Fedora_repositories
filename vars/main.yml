@@ -11,5 +11,9 @@ repositories:
     enabled: true
     gpgcheck: false
     state: present
-
+  - name: 'Visual Studio Code'
+    baseurl: https://packages.microsoft.com/yumrepos/vscode
+    enabled: true
+    gpgcheck: true
+    gpgkey: https://packages.microsoft.com/keys/microsoft.asc
 ...
