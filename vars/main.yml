@@ -1,7 +1,7 @@
 ---
 
 repositories:
-  - name: 'packages-microsoft-com-prod'
+  - name: packages-microsoft-com-prod
     baseurl: 'https://packages.microsoft.com/rhel/7/prod/'
     description: 'packages-microsoft'
     enabled: true
