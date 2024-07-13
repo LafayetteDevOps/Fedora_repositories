@@ -16,4 +16,10 @@ repositories:
     enabled: true
     gpgcheck: true
     gpgkey: https://packages.microsoft.com/keys/microsoft.asc
+    state: present
+  - name: brave-browser-release
+    baseurl: https://brave-browser-rpm-release.s3.brave.com/x86_64/
+    enabled: true
+    state: present
+
 ...
